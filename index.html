@@ -26,6 +26,8 @@
 <link rel="stylesheet" type="text/css" href="/css/main.css?v=0.4.5.1"/>
 
 
+    <meta name="description" content="А5215 - зона экспериментов" />
+
 
 
   <meta name="keywords" content="Hexo,next" />
@@ -37,15 +39,15 @@
   <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.1" />
 
 
-<meta name="description">
+<meta name="description" content="А5215 - зона экспериментов">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+<meta property="og:title" content="A5215">
 <meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:description">
+<meta property="og:site_name" content="A5215">
+<meta property="og:description" content="А5215 - зона экспериментов">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
-<meta name="twitter:description">
+<meta name="twitter:title" content="A5215">
+<meta name="twitter:description" content="А5215 - зона экспериментов">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -55,10 +57,10 @@
   };
 </script>
 
-  <title> Hexo </title>
+  <title> A5215 </title>
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="">
+<body itemscope itemtype="http://schema.org/WebPage" lang="ru">
 
   <!--[if lte IE 8]>
   <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
@@ -85,7 +87,7 @@
       <span class="logo">
         <i class="icon-next-logo"></i>
       </span>
-      <span class="site-title">Hexo</span>
+      <span class="site-title">A5215</span>
   </a>
   <span class="logo-line-after"><i></i></span>
 </h1>
@@ -108,7 +110,7 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             <i class="menu-item-icon icon-next-home"></i> <br />
-            首頁
+            Домой
           </a>
         </li>
       
@@ -116,7 +118,7 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             <i class="menu-item-icon icon-next-archives"></i> <br />
-            歸檔
+            Архив
           </a>
         </li>
       
@@ -124,7 +126,7 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags" rel="section">
             <i class="menu-item-icon icon-next-tags"></i> <br />
-            標籤
+            Тэги
           </a>
         </li>
       
@@ -156,8 +158,8 @@
           
           
             
-              <a class="post-title-link" href="/2015/08/14/hello-world/" itemprop="url">
-                Hello World
+              <a class="post-title-link" href="/2015/10/29/2015-08-15 GIT/" itemprop="url">
+                Github&git
               </a>
             
           
@@ -166,9 +168,9 @@
 
       <div class="post-meta">
         <span class="post-time">
-          發表於
-          <time itemprop="dateCreated" datetime="2015-08-14T20:28:58+03:00" content="2015-08-14">
-            2015-08-14
+          отправлено
+          <time itemprop="dateCreated" datetime="2015-10-29T00:55:02+03:00" content="2015-10-29">
+            2015-10-29
           </time>
         </span>
 
@@ -187,15 +189,93 @@
 
       
         
-          <span itemprop="articleBody"><p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+          <p>В данном руководстве будут описаны основы работы с git-репозиториями и сервисом github.<br>Мы рассмотрим следующие применения репозиториев:</p>
+<ul>
+<li>необходимые приготовления для начала с нуля</li>
+<li>создание репозитория, его удаление, внесение изменений в репозиторий</li>
+<li>хостинг статики и исходников генератора статики</li>
+</ul>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2015/10/29/2015-08-15 GIT/#more" rel="contents">
+              Читать дальше &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
+              <a class="post-title-link" href="/2015/08/16/2015-08-16 HEXO/" itemprop="url">
+                Hexo installation
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          отправлено
+          <time itemprop="dateCreated" datetime="2015-08-16T00:00:00+03:00" content="2015-08-16">
+            2015-08-16
+          </time>
+        </span>
+
+        
+
+        
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><p>Данная заметка посвящена установке Hexo.<br>Сразу к сути. Допустим, у нас есть готовый каталог для сайта по адресу ~/installs/sites/site. Установка всего за исключением npm будет вестись локально в этот каталог.<br>Ставим npm через свой пакетный менеджер или тянем его с оффсайта.<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S npm</span><br></pre></td></tr></table></figure></p>
+<p>Далее выполняем команды из той самой директории сайта:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">npm install <span class="number">0.12</span></span><br><span class="line">npm install hexo-cli</span><br><span class="line">hexo init</span><br><span class="line">./<span class="string">"node_modules/.bin/hexo"</span> init</span><br><span class="line">npm install</span><br><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></p>
+<p>Итак, всё необходимое установлено в подкаталог node_modules. Теперь немного кастомизации:</p>
+<ul>
+<li><p>установка темы сайта:</p>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone http<span class="variable">s:</span>//github.<span class="keyword">com</span>/iissnan/hexo-theme-<span class="keyword">next</span> themes/<span class="keyword">next</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>настройка основной конфигурации:</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">vim</span> _<span class="tag">config</span><span class="class">.yml</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>настройка конфигурации темы сайта:</p>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">vim</span> themes/<span class="keyword">next</span>/_config.yml</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>А теперь запускаем!<br><figure class="highlight axapta"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./<span class="string">"node_modules/.bin/hexo"</span> <span class="keyword">server</span></span><br></pre></td></tr></table></figure></p>
+<p>Желающие могут, конечно, сделать свои сокращения, но мне так проще: всё необходимое для сайта хранится только в его каталоге.</p>
 </span>
         
       
@@ -242,29 +322,29 @@
 
       <section class="site-overview">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" src="/images/default_avatar.jpg" alt="John Doe" itemprop="image"/>
-          <p class="site-author-name" itemprop="name">John Doe</p>
+          <img class="site-author-image" src="/1359361683284.jpg" alt="Max F" itemprop="image"/>
+          <p class="site-author-name" itemprop="name">Max F</p>
         </div>
-        <p class="site-description motion-element" itemprop="description"></p>
+        <p class="site-description motion-element" itemprop="description">А5215 - зона экспериментов</p>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">1</span>
-              <span class="site-state-item-name">文章</span>
+              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-name">записи</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             
               <span class="site-state-item-count">0</span>
-              <span class="site-state-item-name">分類</span>
+              <span class="site-state-item-name">категории</span>
               
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
               <span class="site-state-item-count">0</span>
-              <span class="site-state-item-name">標籤</span>
+              <span class="site-state-item-name">тэги</span>
               </a>
           </div>
 
@@ -273,6 +353,16 @@
         
 
         <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://a5215.github.com" target="_blank">GitHub</a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://vk.com/max_f_m" target="_blank">VK</a>
+              </span>
+            
           
         </div>
 
@@ -301,15 +391,15 @@
   <span class="with-love">
     <i class="icon-next-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
+  <span class="author" itemprop="copyrightHolder">Max F</span>
 </div>
 
 <div class="powered-by">
-  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 強力驅動
+  Powered by <a class="theme-link" href="http://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
-  主題 -
+  Theme -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
     NexT.Mist
   </a>
@@ -367,6 +457,27 @@
   </script>
 
   
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
 
   
   
