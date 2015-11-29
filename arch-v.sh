@@ -1,6 +1,6 @@
 #!/bin/bash
 #mkdir /mnt/repo && mount -rL REPO /mnt/repo && ./mnt/repo/install/vbox.sh
-
+# I called sed 5 times: for locale generation, changes in sudoers and /etc/hosts.
 read -p "This is dangerous operation. Press [Enter] to continue."
 CLEARDISK='/dev/sda' 		#PLEASE choose disk carefully.
 MNT=$CLEARDISK'1' 		#link to our volume
@@ -32,7 +32,7 @@ UGROUPS="sys,wheel,video,audio,storage" #user groups
 	passwd $UNAME
 }
 
-#ls '/mnt/repo/install/archvbox.sh' &&
+lspci | grep VirtualBox && #VBox check
 parted $CLEARDISK mklabel msdos &&
 parted $CLEARDISK mkpart primary ext4 1MiB 100% &&
 mkfs.ext4 $MNT -L archvol &&
