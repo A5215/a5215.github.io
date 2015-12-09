@@ -39,14 +39,13 @@ UGROUPS="sys,wheel,video,audio,storage" #user groups
 	echo "enter user password"
 	passwd $UNAME
 	#драйверы для vbox
-	pacman -S
+	pacman -S virtualbox-guest-utils
 	echo  vboxguest >> /etc/modules-load.d/virtualbox.conf
 	echo  vboxsf >> /etc/modules-load.d/virtualbox.conf
 	echo  vboxvideo >> /etc/modules-load.d/virtualbox.conf
 	echo blacklist i2c_piix4 > /etc/modprobe.d/modprobe.conf
 	systemctl enable vboxservice.service
 	systemctl enable NetworkManager
-	git clone https://github.com/a5215/awesome-config.git ~/.config/awesome/
 #TODO	git clone https://github.com/a5215/migration.git ~/migration
 }
 export -f chroot_ops
