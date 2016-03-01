@@ -7,10 +7,7 @@ read -p "This is dangerous operation. Press [Enter] to continue."
 CLEARDISK='/dev/sda' 		#PLEASE choose disk carefully.
 MNT=$CLEARDISK'1' 		#link to our volume
 MNTPOINT='/mnt/arch'
-PACS=""
-PACS+=" p7zip networkmanager vim mc git openssh"
-	#my base
-
+PACS=" p7zip networkmanager mc git openssh" #virtualbox-guest-utils
 function chroot_ops {
 GRUBMNT='/dev/sda'			#GRUB will be here
 UNAME='u1' 				#username
@@ -32,19 +29,19 @@ UGROUPS="sys,wheel,video,audio,storage" #user groups
 	hwclock --systohc --localtime
 	mkinitcpio -p linux
 	grub-install --target=i386-pc --recheck $GRUBMNT
+	sed -i 's/GRUB_TIMEOUT=5/GRUB_TIMEOUT=0/'   /etc/default/grub
 	grub-mkconfig -o /boot/grub/grub.cfg
 	useradd -m -s /bin/bash -g users -G $UGROUPS $UNAME
-	echo "enter root password"
-	passwd
+	#echo "enter root password"
+	#passwd
 	echo "enter user password"
 	passwd $UNAME
 	#драйверы для vbox
-	pacman -S virtualbox-guest-utils
-	echo  vboxguest >> /etc/modules-load.d/virtualbox.conf
-	echo  vboxsf >> /etc/modules-load.d/virtualbox.conf
-	echo  vboxvideo >> /etc/modules-load.d/virtualbox.conf
+	#echo  vboxguest >> /etc/modules-load.d/virtualbox.conf
+	#echo  vboxsf >> /etc/modules-load.d/virtualbox.conf
+	#echo  vboxvideo >> /etc/modules-load.d/virtualbox.conf
 	echo blacklist i2c_piix4 > /etc/modprobe.d/modprobe.conf
-	systemctl enable vboxservice.service
+	#systemctl enable vboxservice.service
 	systemctl enable NetworkManager
 #TODO	git clone https://github.com/a5215/migration.git ~/migration
 }
