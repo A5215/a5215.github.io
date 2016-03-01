@@ -1,0 +1,15 @@
+#EXTM3U
+
+#EXTINF:-1, Anison.FM (320Kbit, Russia)
+http://s1.russia.anison.fm:8000/AniSonFM(320)
+#EXTINF:-1, Anison.FM (256Kbit, Russia)
+http://s1.russia.anison.fm:8000/AniSonFM(256)
+#EXTINF:-1, Anison.FM (128Kbit, Russia)
+http://s1.russia.anison.fm:8000/AniSonFM(128)
+
+#EXTINF:-1, Anison.FM (320Kbit, Netherlands)
+http://s1.netherlands.anison.fm:8000/AniSonFM(320)
+#EXTINF:-1, Anison.FM (256Kbit, Netherlands)
+http://s1.netherlands.anison.fm:8000/AniSonFM(256)
+#EXTINF:-1, Anison.FM (128Kbit, Netherlands)
+http://s1.netherlands.anison.fm:8000/AniSonFM(128)
